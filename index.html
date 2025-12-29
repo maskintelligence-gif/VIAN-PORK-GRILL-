@@ -1,0 +1,2105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vian Pork Grill | Best Pork Restaurant in Fort Portal, Uganda | Bar & Catering</title>
+  <meta name="description" content="⭐⭐⭐⭐⭐ Fort Portal's #1 pork restaurant! Award-winning smoked pork, fresh meat sales, bar with drinks, and event catering. Open daily 11AM-11PM. Order: 786 060248">
+  
+  <!-- SEO Meta Tags -->
+  <meta name="keywords" content="best pork Fort Portal, grilled pork Uganda, pork restaurant Fort Portal, Vian Pork Grill, bar Fort Portal, pork delivery Fort Portal, catering Fort Portal, fresh pork meat, smoked ribs, pork chops, Ugandan pork">
+  <meta name="author" content="Vian Pork Grill">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph for Facebook Sharing -->
+  <meta property="og:title" content="Vian Pork Grill | Best Pork in Fort Portal">
+  <meta property="og:description" content="Fort Portal's #1 pork restaurant. Smoky grilled pork, fresh meat, bar & catering. Open 11AM-11PM.">
+  <meta property="og:image" content="https://i.ibb.co/WpngxP57/image-20.png">
+  <meta property="og:url" content="https://vianporkgrill.com">
+  <meta property="og:type" content="restaurant.restaurant">
+  
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Vian Pork Grill | Fort Portal's Pork Specialists">
+  <meta name="twitter:description" content="12-hour smoked pork, bar, catering & fresh meat in Fort Portal Tourism City">
+  <meta name="twitter:image" content="https://i.ibb.co/WpngxP57/image-20.png">
+  
+  <!-- Structured Data for Google (CRITICAL for Local SEO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Vian Pork Grill & Bar",
+    "description": "Best grilled pork restaurant in Fort Portal, Uganda. Specializing in smoked pork, fresh meat sales, and catering services.",
+    "image": "https://i.ibb.co/WpngxP57/image-20.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rwengoma",
+      "addressLocality": "Fort Portal",
+      "addressRegion": "Western Region",
+      "addressCountry": "Uganda",
+      "postalCode": "0000"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "0.6667",
+      "longitude": "30.2667"
+    },
+    "openingHours": "Mo-Su 11:00-23:00",
+    "priceRange": "$$",
+    "telephone": "+256786060248",
+    "servesCuisine": "Ugandan Pork Specialties",
+    "url": "https://vianporkgrill.com",
+    "menu": "https://vianporkgrill.com/menu.pdf",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "500"
+    }
+  }
+  </script>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    body { 
+      font-family: 'Inter', sans-serif; 
+      overflow-x: hidden;
+    }
+    h1, h2, h3 { 
+      font-family: 'Playfair Display', serif; 
+    }
+    
+    /* Sidebar styles */
+    .mobile-sidebar {
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in-out;
+    }
+    .mobile-sidebar.open {
+      transform: translateX(0);
+    }
+    .sidebar-overlay {
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease-in-out;
+    }
+    .sidebar-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+    
+    /*Live Chat Button */
+    .live-chat-btn {
+      background: linear-gradient(135deg, #92400e 0%, #b45309 100%);
+      transition: all 0.3s ease;
+    }
+    .live-chat-btn:hover {
+      background: linear-gradient(135deg, #78350f 0%, #92400e 100%);
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(146, 64, 14, 0.3);
+    }
+
+    /* WhatsApp Button */
+    .whatsapp-btn {
+      background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+      transition: all 0.3s ease;
+    }
+    .whatsapp-btn:hover {
+      background: linear-gradient(135deg, #047857 0%, #059669 100%);
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(16, 185, 129, 0.3);
+    }
+    
+    /* Chat button hover */
+    .chat-btn:hover {
+      background-color: white;
+      color: #78350f;
+      transform: scale(1.05);
+      transition: all 0.3s ease;
+    }
+    
+    /* Image hover effects */
+    .menu-card img {
+      transition: transform 0.3s ease;
+    }
+    .menu-card:hover img {
+      transform: scale(1.05);
+    }
+    
+    /* Bar-specific gradient */
+    .bar-gradient {
+      background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+    }
+    
+    /* Download Button Animation */
+    @keyframes pulse-glow {
+      0%, 100% { box-shadow: 0 0 20px rgba(146, 64, 14, 0.5); }
+      50% { box-shadow: 0 0 30px rgba(146, 64, 14, 0.8); }
+    }
+    .download-btn {
+      animation: pulse-glow 2s infinite;
+    }
+    
+    /* Download Modal */
+    .download-modal {
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+    }
+    .download-modal.active {
+      opacity: 1;
+      visibility: visible;
+    }
+    
+    /* Progress Bar */
+    .progress-bar {
+      width: 0%;
+      transition: width 2s ease-in-out;
+    }
+    
+    /* Image optimization */
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    /* Lazy loading for all images */
+    img[loading="lazy"] {
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    img[loading="lazy"].loaded {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body class="bg-amber-50 text-gray-800" id="top">
+
+  <!-- Header -->
+  <header class="bg-amber-900 text-white sticky top-0 z-30 shadow-lg">
+    <div class="container mx-auto px-1 py-1 flex justify-between items-center">
+      <div class="flex items-center space-x-1">
+        <!-- LOGO -->
+        <img src="https://i.ibb.co/WpngxP57/image-20.png" alt="Vian Pork Kitchen & Bar Logo - Best Pork Restaurant in Fort Portal" class="h-20 w-20 md:h-28 md:w-28 object-contain">
+        <div class="text-left">
+          <h1 class="text-3xl md:text-4xl font-bold leading-tight">Vian Pork Grill</h1>
+          <p class="text-amber-300 text-base md:text-xl font-semibold">& Bar</p>
+        </div>
+      </div>
+      
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex space-x-8 text-lg">
+        <a href="#" class="hover:text-amber-300 transition font-medium home-link">
+          <i class="fas fa-home mr-2"></i>Home
+        </a>
+        <a href="#about" class="hover:text-amber-300 transition font-medium">
+          <i class="fas fa-info-circle mr-2"></i>About
+        </a>
+        <a href="#menu" class="hover:text-amber-300 transition font-medium">
+          <i class="fas fa-utensils mr-2"></i>Menu
+        </a>
+        <a href="#gallery" class="hover:text-amber-300 transition font-medium">
+          <i class="fas fa-images mr-2"></i>Gallery
+        </a>
+        <a href="#contact" class="hover:text-amber-300 transition font-medium">
+          <i class="fas fa-phone-alt mr-2"></i>Contact
+        </a>
+      </nav>
+      
+      <!-- Mobile Menu Button -->
+      <button class="md:hidden text-3xl text-white" id="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Sidebar -->
+  <div class="sidebar-overlay fixed inset-0 bg-black bg-opacity-50 z-40" id="sidebar-overlay"></div>
+  
+  <div class="mobile-sidebar fixed top-0 right-0 h-full w-64 bg-amber-900 text-white z-50 p-6 shadow-2xl">
+    <!-- Close Button -->
+    <div class="flex justify-between items-center mb-10">
+      <h2 class="text-2xl font-bold">Menu</h2>
+      <button class="text-3xl" id="close-sidebar">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    
+    <!-- Sidebar Navigation -->
+    <nav class="flex flex-col space-y-6">
+      <a href="#" class="text-xl py-3 px-4 hover:bg-amber-800 rounded-lg transition flex items-center home-link" onclick="closeSidebar()">
+        <i class="fas fa-home mr-4"></i> Home
+      </a>
+      <a href="#about" class="text-xl py-3 px-4 hover:bg-amber-800 rounded-lg transition flex items-center" onclick="closeSidebar()">
+        <i class="fas fa-info-circle mr-4"></i> About
+      </a>
+      <a href="#menu" class="text-xl py-3 px-4 hover:bg-amber-800 rounded-lg transition flex items-center" onclick="closeSidebar()">
+        <i class="fas fa-utensils mr-4"></i> Menu
+      </a>
+      <a href="#gallery" class="text-xl py-3 px-4 hover:bg-amber-800 rounded-lg transition flex items-center" onclick="closeSidebar()">
+        <i class="fas fa-images mr-4"></i> Gallery
+      </a>
+      <a href="#contact" class="text-xl py-3 px-4 hover:bg-amber-800 rounded-lg transition flex items-center" onclick="closeSidebar()">
+        <i class="fas fa-phone-alt mr-4"></i> Contact
+      </a>
+      
+      <!-- Sidebar Contact Info -->
+      <div class="mt-10 pt-6 border-t border-amber-700">
+        <p class="text-lg font-semibold mb-3">Visit Us:</p>
+        <p class="text-amber-200 mb-2"><i class="fas fa-map-marker-alt mr-3"></i>Fort Portal, Uganda</p>
+        <p class="text-amber-200 mb-2"><i class="fas fa-phone mr-3"></i>786 060248</p>
+        <p class="text-amber-200"><i class="fas fa-clock mr-3"></i>11:00 AM - 11:00 PM</p>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Hero Section -->
+<section class="relative bg-cover bg-center h-screen flex items-center justify-center text-center text-white" 
+         style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://thumbs.dreamstime.com/b/juicy-bbq-ribs-plate-tomatoes-parsley-grilled-meat-second-course-snack-ready-to-eat-sauce-gives-spicy-flavor-385725675.jpg');">
+  <div class="container mx-auto px-4">
+    <h2 class="text-5xl md:text-7xl font-bold mb-6 animate-pulse">Perfectly Grilled Pork</h2>
+    <p class="text-2xl md:text-4xl mb-12">Juicy. Smoky. Unforgettable.</p>
+    
+    <!--View Menu and Chat With Us -->
+    <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+      <a href="#menu" class="bg-amber-600 hover:bg-amber-700 px-10 py-5 rounded-full text-2xl font-semibold transition shadow-lg hover:scale-105">
+        <i class="fas fa-book-open mr-3"></i>View Menu
+      </a>
+      
+      <button onclick="Tawk_API.toggle()" class="chat-btn border-4 border-white hover:bg-white hover:text-amber-900 px-10 py-5 rounded-full text-2xl font-semibold transition shadow-lg">
+        <i class="fas fa-comments mr-3"></i>Chat With Us
+      </button>
+    </div>
+    
+    <!-- One-click PDF download -->
+<div class="mt-10">
+  <a href="https://i.ibb.co/WWkzsWbd/Vian-Pork-Grill-Menu.png" 
+     download="Vian_Pork_Grill_Menu_December_2025.pdf"
+     class="inline-flex items-center text-amber-200 hover:text-white transition-all duration-300 group text-sm md:text-base">
+    <div class="bg-amber-800/30 group-hover:bg-amber-700/50 p-2 rounded-lg mr-3 transition-all">
+      <i class="fas fa-file-pdf text-amber-300 group-hover:text-amber-200"></i>
+    </div>
+    <div class="text-left">
+      <div class="font-semibold group-hover:underline">View Full Menu</div>
+      <div class="text-xs text-amber-300/70">3.5 MB • Updated Dec 2025</div>
+    </div>
+  </a>
+</div>
+  
+  <!-- Scroll Indicator -->
+  <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+    <i class="fas fa-chevron-down text-3xl text-amber-300"></i>
+  </div>
+</section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-amber-900 text-white">
+    <div class="container mx-auto px-4 text-center max-w-5xl">
+      <h2 class="text-4xl md:text-5xl font-bold mb-10">Best Pork Restaurant in Fort Portal - Vian Pork Grill</h2>
+      <p class="text-xl leading-relaxed mb-8">
+        "HERE, we celebrate pork in all its glorious forms. Whether you crave smoky grilled ribs, comforting boiled stew, crispy fried specialties, or perfect pairings with hand-cut chips, our passion is delivering exceptional pork dishes cooked every way you love."
+        </p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+        <div class="p-6 bg-amber-800/30 rounded-xl">
+          <i class="fas fa-fire text-4xl text-amber-300 mb-4"></i>
+          <h3 class="text-2xl font-bold mb-3">Open Flame Grilling</h3>
+          <p>Traditional charcoal grilling for authentic smoky flavor</p>
+        </div>
+        <div class="p-6 bg-amber-800/30 rounded-xl">
+          <i class="fas fa-leaf text-4xl text-amber-300 mb-4"></i>
+          <h3 class="text-2xl font-bold mb-3">Fresh Ingredients</h3>
+          <p>Locally sourced, premium quality pork</p>
+        </div>
+        <div class="p-6 bg-amber-800/30 rounded-xl">
+          <i class="fas fa-heart text-4xl text-amber-300 mb-4"></i>
+          <h3 class="text-2xl font-bold mb-3">Made with Love</h3>
+          <p>Family recipes passed down for generations</p>
+        </div>
+      </div>
+      
+      <!-- Stats Section -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
+        <div class="p-4">
+          <div class="text-4xl font-bold text-amber-300">8+</div>
+          <div class="text-lg">Years Serving</div>
+        </div>
+        <div class="p-4">
+          <div class="text-4xl font-bold text-amber-300">50+</div>
+          <div class="text-lg">Menu Items</div>
+        </div>
+        <div class="p-4">
+          <div class="text-4xl font-bold text-amber-300">10K+</div>
+          <div class="text-lg">Happy Customers</div>
+        </div>
+        <div class="p-4">
+          <div class="text-4xl font-bold text-amber-300">24</div>
+          <div class="text-lg">Hour Marination</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Preview -->
+<section id="menu" class="py-20 bg-white">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-4xl md:text-5xl font-bold mb-4 text-amber-900">Pork Menu Fort Portal | Smoked Ribs, Grilled Pork, Fresh Meat</h2>
+    <p class="text-xl text-gray-600 mb-12">Fort Portal's most popular pork dishes | Award-winning recipes since 2017</p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+      <!-- Roasted Pork Card -->
+      <div class="menu-card bg-amber-100 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300">
+        <div class="relative">
+          <img src="https://i.ibb.co/LBrDrvG/IMG-20251228-050544.jpg" 
+               alt="Legendary Fried Pork Fort Portal | Best fried pork in Uganda" 
+               class="w-full h-72 object-cover">
+          <!-- Popularity Badge -->
+          <div class="absolute top-4 right-4 bg-amber-600 text-white px-3 py-1 rounded-full font-bold text-sm">
+            FORT PORTAL'S FAVORITE
+          </div>
+        </div>
+        
+        <div class="p-8">
+          <h3 class="text-3xl font-bold mb-3">Legendary Fried Pork</h3>
+          
+          <!-- POWERFUL HOOK -->
+          <p class="text-gray-700 mb-4 italic font-medium text-lg leading-relaxed">
+            "12-hour smoked pork so tender, it literally falls off the bone. Our secret recipe has customers coming back weekly."
+          </p>
+          
+          <div class="mb-6">
+            <div class="flex justify-center items-center mb-2">
+              <span class="text-amber-500 text-2xl">⭐⭐⭐⭐⭐</span>
+              <span class="ml-3 text-lg font-bold text-amber-800">(247+ Reviews)</span>
+            </div>
+            <p class="text-lg text-amber-700 font-medium">
+              🍽️ Feeds 2-3 • 🔥 Wood-smoked • ⏱️ 12-hour prep
+            </p>
+          </div>
+          
+          <!-- Live Chat & WhatsApp -->
+          <div class="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
+            <!-- LIVE CHAT Button -->
+            <button onclick="Tawk_API.toggle()" 
+                    class="live-chat-btn bg-gradient-to-r from-amber-700 to-amber-900 hover:from-amber-800 hover:to-amber-950 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center">
+              <i class="fas fa-comments mr-3"></i>Live Chat
+            </button>
+            
+            <!-- WhatsApp Button -->
+            <a href="https://wa.me/256786060248?text=Hello%20Vian%20Pork%20Grill!%20I'm%20interested%20in%20your%20Legendary%20Roasted%20Pork.%20Can%20you%20tell%20me%20more?" 
+               target="_blank"
+               class="whatsapp-btn bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center">
+              <i class="fab fa-whatsapp mr-3"></i>Order Now
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- First Class Pork Dishes Card -->
+      <div class="menu-card bg-amber-100 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300">
+        <div class="relative">
+          <img src="https://i.ibb.co/nsK6gphR/IMG-20251228-050202.jpg" 
+               alt="Master-Grilled Pork Fort Portal | Premium pork chops Uganda" 
+               class="w-full h-72 object-cover">
+          <!-- Chef's Special Badge -->
+          <div class="absolute top-4 right-4 bg-red-600 text-white px-3 py-1 rounded-full font-bold text-sm">
+            GRILL MASTER'S CHOICE
+          </div>
+        </div>
+        
+        <div class="p-8">
+          <h3 class="text-3xl font-bold mb-3">Master-Grilled Pork</h3>
+          
+          <!--HOOK -->
+          <p class="text-gray-700 mb-4 italic font-medium text-lg leading-relaxed">
+            "Hand-cut chops with a perfect char crust that gives way to outrageously juicy, buttery-tender meat inside."
+          </p>
+          
+          <div class="mb-6">
+            <div class="flex justify-center items-center mb-2">
+              <span class="text-amber-500 text-2xl">⭐⭐⭐⭐⭐</span>
+              <span class="ml-3 text-lg font-bold text-amber-800">(189+ Reviews)</span>
+            </div>
+            <p class="text-lg text-amber-700 font-medium">
+              🥩 Premium cut • 🔪 Hand-trimmed • 🌶️ Signature spice rub
+            </p>
+          </div>
+          
+          <!-- Live Chat & WhatsApp -->
+          <div class="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
+            <!-- LIVE CHAT Button -->
+            <button onclick="Tawk_API.toggle()" 
+                    class="live-chat-btn bg-gradient-to-r from-amber-700 to-amber-900 hover:from-amber-800 hover:to-amber-950 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center">
+              <i class="fas fa-comments mr-3"></i>Live Chat
+            </button>
+            
+            <!-- WhatsApp Button -->
+            <a href="https://wa.me/256786060248?text=Hello%20Vian%20Pork%20Grill!%20I'm%20interested%20in%20your%20Master-Grilled%20Pork%20Chops.%20Can%20you%20tell%20me%20more?" 
+               target="_blank"
+               class="whatsapp-btn bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center">
+              <i class="fab fa-whatsapp mr-3"></i>Order Now
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- First Class Chips Card -->
+      <div class="menu-card bg-amber-100 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300">
+        <div class="relative">
+          <img src="https://i.ibb.co/G3FWg2kD/IMG-20251228-050403.jpg" 
+               alt="Ultimate Pork Platter Fort Portal | Mixed pork feast Uganda" 
+               class="w-full h-72 object-cover">
+          <!-- Perfect Pair Badge -->
+          <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full font-bold text-sm">
+            ULTIMATE FEAST
+          </div>
+        </div>
+        
+        <div class="p-8">
+          <h3 class="text-3xl font-bold mb-3">The Ultimate Pork Platter</h3>
+          
+          <!-- HOOK -->
+          <p class="text-gray-700 mb-4 italic font-medium text-lg leading-relaxed">
+            "Everything that made us famous, on one epic platter. The meal that ends all 'what should we order?' debates."
+          </p>
+          
+          <div class="mb-6">
+            <div class="flex justify-center items-center mb-2">
+              <span class="text-amber-500 text-2xl">⭐⭐⭐⭐⭐</span>
+              <span class="ml-3 text-lg font-bold text-amber-800">(312+ Reviews)</span>
+            </div>
+            <p class="text-lg text-amber-700 font-medium">
+              👥 Perfect for sharing • 🎉 Celebration favorite • 🍖 4 types of pork
+            </p>
+          </div>
+          
+          <!-- Live Chat & WhatsApp -->
+          <div class="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
+            <!-- LIVE CHAT Button -->
+            <button onclick="Tawk_API.toggle()" 
+                    class="live-chat-btn bg-gradient-to-r from-amber-700 to-amber-900 hover:from-amber-800 hover:to-amber-950 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center">
+              <i class="fas fa-comments mr-3"></i>Live Chat
+            </button>
+            
+            <!-- WhatsApp Button -->
+            <a href="https://wa.me/256786060248?text=Hello%20Vian%20Pork%20Grill!%20I'm%20interested%20in%20your%20Ultimate%20Pork%20Platter.%20Can%20you%20tell%20me%20more?" 
+               target="_blank"
+               class="whatsapp-btn bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center">
+              <i class="fab fa-whatsapp mr-3"></i>Order Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--Menu Items -->
+    <div class="mt-16">
+      <h3 class="text-3xl font-bold mb-8 text-amber-900">More Crowd-Pleasers</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Roasted stick + Beer -->
+        <div class="bg-gradient-to-br from-amber-50 to-amber-100 p-6 rounded-xl hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-amber-200">
+          <h4 class="text-2xl font-bold mb-2 text-amber-900">Roasted Skewers + Beer🍺🍻</h4>
+          
+          <!-- Hook -->
+          <p class="text-gray-700 mb-3 font-medium">
+            "The perfect beer companion - juicy marinated pork cubes grilled on stick"
+          </p>
+          
+          <div class="mb-4">
+            <span class="text-amber-500 text-xl">⭐⭐⭐⭐⭐</span>
+            <span class="ml-2 text-amber-700 font-bold">Bar Favorite</span>
+          </div>
+          
+          <div class="flex flex-col gap-2">
+            <button onclick="Tawk_API.toggle()" 
+                    class="w-full bg-gradient-to-r from-amber-600 to-amber-800 hover:from-amber-700 hover:to-amber-900 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center shadow hover:shadow-lg">
+              <i class="fas fa-comments mr-2"></i>Live Chat
+            </button>
+            
+            <a href="https://wa.me/256786060248?text=Hello%20Vian%20Pork%20Grill!%20I'm%20interested%20in%20your%20Roasted%20Skewers%20%2B%20Beer.%20Can%20you%20tell%20me%20more?" 
+               target="_blank"
+               class="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center shadow hover:shadow-lg">
+              <i class="fab fa-whatsapp mr-2"></i>WhatsApp
+            </a>
+          </div>
+        </div>
+        
+        <!-- Grilled Sausages -->
+        <div class="bg-gradient-to-br from-amber-50 to-amber-100 p-6 rounded-xl hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-amber-200">
+          <h4 class="text-2xl font-bold mb-2 text-amber-900">Homemade Sausages</h4>
+          
+          <!-- Hook -->
+          <p class="text-gray-700 mb-3 font-medium">
+            "Our secret-spice sausages that have a cult following in Fort Portal"
+          </p>
+          
+          <div class="mb-4">
+            <span class="text-amber-500 text-xl">⭐⭐⭐⭐⭐</span>
+            <span class="ml-2 text-amber-700 font-bold">Local Legend</span>
+          </div>
+          
+          <div class="flex flex-col gap-2">
+            <button onclick="Tawk_API.toggle()" 
+                    class="w-full bg-gradient-to-r from-amber-600 to-amber-800 hover:from-amber-700 hover:to-amber-900 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center shadow hover:shadow-lg">
+              <i class="fas fa-comments mr-2"></i>Live Chat
+            </button>
+            
+            <a href="https://wa.me/256786060248?text=Hello%20Vian%20Pork%20Grill!%20I'm%20interested%20in%20your%20Homemade%20Sausages.%20Can%20you%20tell%20me%20more?" 
+               target="_blank"
+               class="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center shadow hover:shadow-lg">
+              <i class="fab fa-whatsapp mr-2"></i>WhatsApp
+            </a>
+          </div>
+        </div>
+        
+        <!-- Crispy Pork Belly -->
+        <div class="bg-gradient-to-br from-amber-50 to-amber-100 p-6 rounded-xl hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-amber-200">
+          <h4 class="text-2xl font-bold mb-2 text-amber-900">Crispy Pork Belly</h4>
+          
+          <!--Hook -->
+          <p class="text-gray-700 mb-3 font-medium">
+            "Double-cooked to achieve the impossible: crunchy outside, meltingly tender inside"
+          </p>
+          
+          <div class="mb-4">
+            <span class="text-amber-500 text-xl">⭐⭐⭐⭐⭐</span>
+            <span class="ml-2 text-amber-700 font-bold">Texture Masterpiece</span>
+          </div>
+          
+          <div class="flex flex-col gap-2">
+            <button onclick="Tawk_API.toggle()" 
+                    class="w-full bg-gradient-to-r from-amber-600 to-amber-800 hover:from-amber-700 hover:to-amber-900 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center shadow hover:shadow-lg">
+              <i class="fas fa-comments mr-2"></i>Live Chat
+            </button>
+            
+            <a href="https://wa.me/256786060248?text=Hello%20Vian%20Pork%20Grill!%20I'm%20interested%20in%20your%20Crispy%20Pork%20Belly.%20Can%20you%20tell%20me%20more?" 
+               target="_blank"
+               class="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center shadow hover:shadow-lg">
+              <i class="fab fa-whatsapp mr-2"></i>WhatsApp
+            </a>
+          </div>
+        </div>
+        
+        <!-- Plantains & Salad -->
+        <div class="bg-gradient-to-br from-amber-50 to-amber-100 p-6 rounded-xl hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-amber-200">
+          <h4 class="text-2xl font-bold mb-2 text-amber-900">Perfect Pairings</h4>
+          
+          <!-- Hook -->
+          <p class="text-gray-700 mb-3 font-medium">
+            "Our famous hand-cut chips & fresh salad - the perfect complement to any pork dish"
+          </p>
+          
+          <div class="mb-4">
+            <span class="text-amber-500 text-xl">⭐⭐⭐⭐⭐</span>
+            <span class="ml-2 text-amber-700 font-bold">Essential Sides</span>
+          </div>
+          
+          <div class="flex flex-col gap-2">
+            <button onclick="Tawk_API.toggle()" 
+                    class="w-full bg-gradient-to-r from-amber-600 to-amber-800 hover:from-amber-700 hover:to-amber-900 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center shadow hover:shadow-lg">
+              <i class="fas fa-comments mr-2"></i>Live Chat
+            </button>
+            
+            <a href="https://wa.me/256786060248?text=Hello%20Vian%20Pork%20Grill!%20I'm%20interested%20in%20your%20Perfect%20Pairings%20sides.%20Can%20you%20tell%20me%20more?" 
+               target="_blank"
+               class="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center shadow hover:shadow-lg">
+              <i class="fab fa-whatsapp mr-2"></i>WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Special Offers -->
+    <div class="mt-16 bg-gradient-to-r from-amber-600 via-amber-700 to-amber-800 text-white p-10 rounded-2xl shadow-2xl">
+      <div class="max-w-3xl mx-auto">
+        <h3 class="text-4xl font-bold mb-6">🎉 Fort Portal's Best Kept Secret...</h3>
+        
+        <!-- Hook -->
+        <p class="text-2xl mb-8 leading-relaxed italic">
+          "Every day, our grill masters create something special that's not on the menu. 
+          Message us to discover today's exclusive pork creation!"
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+          <button onclick="Tawk_API.toggle()" 
+                  class="group bg-white text-amber-800 hover:bg-amber-50 px-8 py-4 rounded-full text-xl font-semibold transition-all duration-300 shadow-2xl hover:shadow-3xl flex items-center">
+            <i class="fas fa-comments mr-3"></i>
+            Live Chat for Secret
+          </button>
+          
+          <a href="https://wa.me/256786060248?text=What's%20the%20secret%20special%20today%20at%20Vian%20Pork%20Grill?" 
+             target="_blank"
+             class="group bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full text-xl font-semibold transition-all duration-300 shadow-2xl hover:shadow-3xl flex items-center">
+            <i class="fab fa-whatsapp mr-3"></i>
+            WhatsApp for Secret
+          </a>
+        </div>
+        
+        <p class="mt-6 text-amber-200 text-lg">
+          ⚡ Limited quantities daily ⚡
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+    
+    <!-- Fresh Pork Meat Section -->
+<section id="fresh-meat" class="py-20 bg-gradient-to-b from-amber-50 to-white">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4 text-amber-900">
+        <i class="fas fa-piggy-bank text-amber-600 mr-4"></i>
+        Fresh Pork Meat For Home Cooking
+      </h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        Take our premium quality pork home with you! Perfect for your family recipes, special occasions, or weekend BBQs.
+      </p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+      <!-- Premium Cuts -->
+      <div class="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+        <div class="relative h-56 overflow-hidden">
+          <img src="https://i.ibb.co/20PFWMNn/FB-IMG-1767006995263.jpg"
+               alt="Premium Pork Cuts Fort Portal | Fresh pork meat Uganda"
+               class="w-full h-full object-cover hover:scale-110 transition duration-500">
+          <div class="absolute top-4 left-4 bg-amber-600 text-white px-4 py-1 rounded-full font-bold text-sm">
+            MOST POPULAR
+          </div>
+        </div>
+        
+        <div class="p-8">
+          <h3 class="text-2xl font-bold mb-4 text-amber-900">Premium Pork Cuts</h3>
+          
+          <div class="space-y-3 mb-6">
+            <div class="flex items-center justify-between py-2 border-b border-amber-100">
+              <span class="font-medium">Pork Chops</span>
+              <span class="text-amber-700 font-bold">per kg</span>
+            </div>
+            <div class="flex items-center justify-between py-2 border-b border-amber-100">
+              <span class="font-medium">Pork Belly</span>
+              <span class="text-amber-700 font-bold">per kg</span>
+            </div>
+            <div class="flex items-center justify-between py-2 border-b border-amber-100">
+              <span class="font-medium">Pork Shoulder</span>
+              <span class="text-amber-700 font-bold">per kg</span>
+            </div>
+            <div class="flex items-center justify-between py-2">
+              <span class="font-medium">Pork Loin</span>
+              <span class="text-amber-700 font-bold">per kg</span>
+            </div>
+          </div>
+          
+          <div class="flex flex-col gap-3">
+            <button onclick="Tawk_API.toggle()" 
+                    class="w-full bg-gradient-to-r from-amber-700 to-amber-900 hover:from-amber-800 hover:to-amber-950 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center shadow hover:shadow-lg">
+              <i class="fas fa-comments mr-2"></i>Chat for Prices
+            </button>
+            
+            <a href="https://wa.me/256786060248?text=Hello%20Vian%20Pork%20Grill!%20I'm%20interested%20in%20your%20Premium%20Pork%20Cuts.%20Can%20I%20get%20today's%20prices?" 
+               target="_blank"
+               class="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center shadow hover:shadow-lg">
+              <i class="fab fa-whatsapp mr-2"></i>WhatsApp for Prices
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Whole/Half Pig -->
+      <div class="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+        <div class="relative h-56 overflow-hidden">
+          <img src="https://i.ibb.co/39XHDKgq/IMG-20251228-050611.jpg">
+               alt="Whole Pig Order Fort Portal | Bulk pork orders Uganda"
+               class="w-full h-full object-cover hover:scale-110 transition duration-500">
+          <div class="absolute top-4 left-4 bg-red-600 text-white px-4 py-1 rounded-full font-bold text-sm">
+            SPECIAL ORDERS
+          </div>
+        </div>
+        
+        <div class="p-8">
+          <h3 class="text-2xl font-bold mb-4 text-amber-900">Whole/Half Pig Orders</h3>
+          
+          <div class="mb-6">
+            <p class="text-gray-700 mb-4">
+              Perfect for weddings, parties, family gatherings, or large events. We provide:
+            </p>
+            
+            <ul class="space-y-2 text-gray-700">
+              <li class="flex items-start">
+                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                <span>Whole pig (cleaned and prepared)</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                <span>Half pig portions</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                <span>Special cuts as requested</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                <span>Delivery available</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="bg-amber-50 p-4 rounded-lg mb-6">
+            <p class="text-sm text-amber-800 font-medium">
+              <i class="fas fa-info-circle mr-2"></i>
+              Order at least 2 days in advance for whole/half pigs
+            </p>
+          </div>
+          
+          <div class="flex flex-col gap-3">
+            <button onclick="Tawk_API.toggle()" 
+                    class="w-full bg-gradient-to-r from-amber-700 to-amber-900 hover:from-amber-800 hover:to-amber-950 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center shadow hover:shadow-lg">
+              <i class="fas fa-calendar-alt mr-2"></i>Book in Advance
+            </button>
+            
+            <a href="https://wa.me/256786060248?text=Hello%20Vian%20Pork%20Grill!%20I%20want%20to%20order%20a%20whole%2Fhalf%20pig.%20Can%20you%20give%20me%20details%3F" 
+               target="_blank"
+               class="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center shadow hover:shadow-lg">
+              <i class="fab fa-whatsapp mr-2"></i>WhatsApp for Bulk Orders
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Marinated & Ready-to-Cook -->
+      <div class="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+        <div class="relative h-56 overflow-hidden">
+          <img src="https://i.ibb.co/n8f57FRT/FB-IMG-1767007071573.jpg"
+               alt="Marinated Pork Fort Portal | Ready-to-cook pork Uganda"
+               class="w-full h-full object-cover hover:scale-110 transition duration-500">
+          <div class="absolute top-4 left-4 bg-blue-600 text-white px-4 py-1 rounded-full font-bold text-sm">
+            READY TO COOK
+          </div>
+        </div>
+        
+        <div class="p-8">
+          <h3 class="text-2xl font-bold mb-4 text-amber-900">Marinated & Ready-to-Cook</h3>
+          
+          <div class="mb-6">
+            <p class="text-gray-700 mb-4">
+              Save time with our pre-marinated options using our signature spices and recipes:
+            </p>
+            
+            <div class="space-y-3">
+              <div class="flex items-center justify-between bg-amber-50 p-3 rounded-lg">
+                <div>
+                  <p class="font-medium">BBQ Style Pork</p>
+                  <p class="text-sm text-gray-600">Our secret BBQ marinade</p>
+                </div>
+                <span class="text-amber-700 font-bold">per kg</span>
+              </div>
+              
+              <div class="flex items-center justify-between bg-amber-50 p-3 rounded-lg">
+                <div>
+                  <p class="font-medium">Traditional Spiced</p>
+                  <p class="text-sm text-gray-600">Ugandan traditional spices</p>
+                </div>
+                <span class="text-amber-700 font-bold">per kg</span>
+              </div>
+              
+              <div class="flex items-center justify-between bg-amber-50 p-3 rounded-lg">
+                <div>
+                  <p class="font-medium">Garlic & Herb</p>
+                  <p class="text-sm text-gray-600">Fresh garlic & herbs</p>
+                </div>
+                <span class="text-amber-700 font-bold">per kg</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="text-center mb-6">
+            <p class="text-sm text-amber-700 font-medium">
+              <i class="fas fa-clock mr-2"></i>
+              Marinated for 24 hours for maximum flavor
+            </p>
+          </div>
+          
+          <div class="flex flex-col gap-3">
+            <button onclick="Tawk_API.toggle()" 
+                    class="w-full bg-gradient-to-r from-amber-700 to-amber-900 hover:from-amber-800 hover:to-amber-950 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center shadow hover:shadow-lg">
+              <i class="fas fa-comments mr-2"></i>Ask About Marinades
+            </button>
+            
+            <a href="https://wa.me/256786060248?text=Hello%20Vian%20Pork%20Grill!%20I'm%20interested%20in%20your%20marinated%20pork%20options.%20What%20do%20you%20have%20available%3F" 
+               target="_blank"
+               class="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center shadow hover:shadow-lg">
+              <i class="fab fa-whatsapp mr-2"></i>WhatsApp for Marinades
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Why Our Fresh Pork -->
+    <div class="bg-gradient-to-r from-amber-700 to-amber-900 text-white p-8 rounded-2xl shadow-lg mb-12">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="bg-white/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-truck text-2xl"></i>
+          </div>
+          <h4 class="text-xl font-bold mb-2">Free Local Delivery</h4>
+          <p class="text-amber-200">Free delivery in Fort Portal for orders over 50,000 UGX</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="bg-white/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-leaf text-2xl"></i>
+          </div>
+          <h4 class="text-xl font-bold mb-2">Farm Fresh</h4>
+          <p class="text-amber-200">Locally sourced from trusted farmers in Rwenzori region</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="bg-white/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-clock text-2xl"></i>
+          </div>
+          <h4 class="text-xl font-bold mb-2">Same Day Processing</h4>
+          <p class="text-amber-200">Processed daily for maximum freshness</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Fresh Meat CTA -->
+    <div class="text-center">
+      <h3 class="text-3xl font-bold mb-6 text-amber-900">
+        Need Fresh Pork Meat Today?
+      </h3>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a href="tel:786060248" 
+           class="bg-gradient-to-r from-amber-700 to-amber-900 hover:from-amber-800 hover:to-amber-950 text-white px-8 py-4 rounded-full text-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl flex items-center">
+          <i class="fas fa-phone mr-3"></i>Call to Order Now
+        </a>
+        
+        <a href="https://wa.me/256786060248?text=Hello%20Vian%20Pork%20Grill!%20I%20want%20to%20order%20fresh%20pork%20meat.%20What%20do%20you%20have%20available%20today%3F" 
+           target="_blank"
+           class="border-2 border-amber-600 text-amber-700 hover:bg-amber-50 px-8 py-4 rounded-full text-xl font-semibold transition-all duration-300 flex items-center">
+          <i class="fab fa-whatsapp mr-3"></i>WhatsApp Fresh Meat Order
+        </a>
+      </div>
+      <p class="mt-6 text-gray-600">
+        Available daily from 8:00 AM to 7:00 PM at our Fort Portal location
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Catering & Events Section -->
+<section id="catering" class="py-20 bg-gradient-to-b from-white to-amber-50">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4 text-amber-900">
+        <i class="fas fa-utensils text-amber-600 mr-4"></i>
+        Pork Catering Fort Portal | Wedding & Event Catering Services
+      </h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        #1 pork catering service in Fort Portal for weddings, corporate events & parties. Let Vian Pork Grill cater your next event in Fort Portal.
+      </p>
+    </div>
+    
+    <!-- Catering Packages -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+      <!-- Small Events -->
+      <div class="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative">
+        <div class="bg-amber-600 text-white p-6 text-center">
+          <h3 class="text-2xl font-bold">Small Events</h3>
+          <p class="text-amber-200">10-30 People</p>
+        </div>
+        <div class="p-8">
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-center">
+              <i class="fas fa-check text-green-500 mr-3"></i>
+              <span>Whole Roasted Pig (20-30kg)</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check text-green-500 mr-3"></i>
+              <span>2 Side Dishes of Choice</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check text-green-500 mr-3"></i>
+              <span>Serving Staff Included</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check text-green-500 mr-3"></i>
+              <span>Setup & Cleanup</span>
+            </li>
+          </ul>
+          <div class="text-center">
+            <button onclick="Tawk_API.toggle()" 
+                    class="w-full bg-amber-600 hover:bg-amber-700 text-white py-3 rounded-lg font-semibold transition">
+              <i class="fas fa-calendar-alt mr-2"></i>Contact for Quote
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Medium Events -->
+      <div class="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 border-amber-500 relative">
+        <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
+          <span class="bg-red-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
+            MOST POPULAR
+          </span>
+        </div>
+        <div class="bg-amber-700 text-white p-6 text-center pt-8">
+          <h3 class="text-2xl font-bold">Medium Events</h3>
+          <p class="text-amber-200">30-80 People</p>
+        </div>
+        <div class="p-8">
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-center">
+              <i class="fas fa-check text-green-500 mr-3"></i>
+              <span>2 Whole Roasted Pigs</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check text-green-500 mr-3"></i>
+              <span>3 Side Dishes + Salad</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check text-green-500 mr-3"></i>
+              <span>Full Serving Staff</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check text-green-500 mr-3"></i>
+              <span>Custom Menu Options</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check text-green-500 mr-3"></i>
+              <span>On-site Grill Setup</span>
+            </li>
+          </ul>
+          <div class="text-center">
+            <a href="https://wa.me/256786060248?text=Hello%20Vian%20Pork%20Grill!%20I'm%20interested%20in%20your%20Medium%20Event%20catering%20package%20for%2030-80%20people." 
+               target="_blank"
+               class="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center">
+              <i class="fab fa-whatsapp mr-2"></i>Contact for Quote
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Large Events -->
+      <div class="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative">
+        <div class="bg-amber-800 text-white p-6 text-center">
+          <h3 class="text-2xl font-bold">Large Events</h3>
+          <p class="text-amber-200">80-200+ People</p>
+        </div>
+        <div class="p-8">
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-center">
+              <i class="fas fa-check text-green-500 mr-3"></i>
+              <span>Multiple Whole Pigs</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check text-green-500 mr-3"></i>
+              <span>Full Buffet Setup</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check text-green-500 mr-3"></i>
+              <span>Professional Chefs On-site</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check text-green-500 mr-3"></i>
+              <span>Customized Menu Planning</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check text-green-500 mr-3"></i>
+              <span>Equipment Rental Available</span>
+            </li>
+          </ul>
+          <div class="text-center">
+            <button onclick="Tawk_API.toggle()" 
+                    class="w-full bg-amber-800 hover:bg-amber-900 text-white py-3 rounded-lg font-semibold transition">
+              <i class="fas fa-star mr-2"></i>Contact for Quote
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Event Types We Cater -->
+    <div class="mb-16">
+      <h3 class="text-3xl font-bold mb-8 text-center text-amber-900">Events We Specialize In</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="text-center p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+          <i class="fas fa-ring text-3xl text-amber-600 mb-4"></i>
+          <h4 class="font-bold text-lg mb-2">Weddings</h4>
+          <p class="text-gray-600 text-sm">Traditional & modern wedding receptions</p>
+        </div>
+        <div class="text-center p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+          <i class="fas fa-briefcase text-3xl text-amber-600 mb-4"></i>
+          <h4 class="font-bold text-lg mb-2">Corporate Events</h4>
+          <p class="text-gray-600 text-sm">Company parties & team building</p>
+        </div>
+        <div class="text-center p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+          <i class="fas fa-birthday-cake text-3xl text-amber-600 mb-4"></i>
+          <h4 class="font-bold text-lg mb-2">Birthdays</h4>
+          <p class="text-gray-600 text-sm">All ages celebration parties</p>
+        </div>
+        <div class="text-center p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+          <i class="fas fa-users text-3xl text-amber-600 mb-4"></i>
+          <h4 class="font-bold text-lg mb-2">Family Gatherings</h4>
+          <p class="text-gray-600 text-sm">Reunions & holiday celebrations</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Why Choose Our Catering -->
+    <div class="bg-gradient-to-r from-amber-700 to-amber-900 text-white p-10 rounded-2xl shadow-lg mb-12">
+      <div class="max-w-4xl mx-auto">
+        <h3 class="text-3xl font-bold mb-8 text-center">Why Choose Vian Pork Grill Catering?</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <div class="bg-white/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="fas fa-fire text-2xl"></i>
+            </div>
+            <h4 class="text-xl font-bold mb-2">Live Grilling On-site</h4>
+            <p class="text-amber-200">Freshly grilled pork at your event venue</p>
+          </div>
+          <div class="text-center">
+            <div class="bg-white/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="fas fa-shield-alt text-2xl"></i>
+            </div>
+            <h4 class="text-xl font-bold mb-2">Hygienic & Professional</h4>
+            <p class="text-amber-200">Full food safety compliance</p>
+          </div>
+          <div class="text-center">
+            <div class="bg-white/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="fas fa-calendar-check text-2xl"></i>
+            </div>
+            <h4 class="text-xl font-bold mb-2">Stress-Free Planning</h4>
+            <p class="text-amber-200">We handle everything from setup to cleanup</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Catering CTA -->
+    <div class="text-center">
+      <h3 class="text-3xl font-bold mb-6 text-amber-900">Ready to Plan Your Event?</h3>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a href="https://wa.me/256786060248?text=Hello%20Vian%20Pork%20Grill!%20I%20want%20to%20discuss%20catering%20for%20my%20event%20in%20Fort%20Portal." 
+           target="_blank"
+           class="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-8 py-4 rounded-full text-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl flex items-center">
+          <i class="fab fa-whatsapp mr-3"></i>WhatsApp for Catering
+        </a>
+        
+        <a href="tel:786060248" 
+           class="border-2 border-amber-600 text-amber-700 hover:bg-amber-50 px-8 py-4 rounded-full text-xl font-semibold transition-all duration-300 flex items-center">
+          <i class="fas fa-phone-alt mr-3"></i>Call Event Manager
+        </a>
+      </div>
+      <p class="mt-6 text-gray-600">
+        Book at least 7 days in advance for best availability
+      </p>
+    </div>
+  </div>
+</section>
+   
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-20 bg-amber-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl md:text-5xl font-bold mb-12 text-center text-amber-900">COME ENJOY</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <img src="https://i.ibb.co/DHFFBmkL/IMG-20251228-050654.jpg" 
+             alt="Grilling process at Vian Pork Grill Fort Portal | Pork cooking Uganda" 
+             class="rounded-lg shadow-md h-48 w-full object-cover hover:scale-105 transition duration-300">
+             
+        <img src="https://i.ibb.co/53jRj6V/IMG-20251228-050513.jpg" 
+             alt="Restaurant interior Vian Pork Grill Fort Portal | Dining atmosphere Uganda" 
+             class="rounded-lg shadow-md h-48 w-full object-cover hover:scale-105 transition duration-300">
+             
+        <img src="https://i.ibb.co/JRbnnkDT/IMG-20251228-050215.jpg" 
+             alt="Plated pork dish Fort Portal | Food presentation Vian Pork Grill" 
+             class="rounded-lg shadow-md h-48 w-full object-cover hover:scale-105 transition duration-300">
+             
+        <img src="https://i.ibb.co/chJtYvtr/IMG-20251228-050301.jpg" 
+             alt="Happy customers at Vian Pork Grill Fort Portal | Restaurant reviews Uganda" 
+             class="rounded-lg shadow-md h-48 w-full object-cover hover:scale-105 transition duration-300">
+             
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+<section class="py-20 bg-gradient-to-b from-amber-50 to-white">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl md:text-5xl font-bold mb-4 text-center text-amber-900">
+      What Fort Portal Is Saying About Us
+    </h2>
+    <p class="text-xl text-gray-600 mb-12 text-center max-w-3xl mx-auto">
+      Join hundreds of satisfied customers who keep coming back for our legendary pork
+    </p>
+    
+    <!-- Main Testimonials -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+      <!-- Testimonial 1 -->
+      <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 relative">
+        <!-- Quote Icon -->
+        <div class="absolute -top-4 -left-4 w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center">
+          <i class="fas fa-quote-left text-white text-xl"></i>
+        </div>
+        
+        <!-- Rating -->
+        <div class="flex mb-4">
+          <span class="text-amber-400 text-xl">★★★★★</span>
+          <span class="ml-3 font-bold text-amber-700">5.0</span>
+        </div>
+        
+        <!-- Review Text -->
+        <p class="italic text-gray-700 mb-6 text-lg leading-relaxed">
+          "I've lived in Fort Portal for 15 years and Vian Pork Grill is hands down the best pork in town. The smoky flavor is unlike anything else. My family comes here every Friday night!"
+        </p>
+        
+        <!-- Reviewer -->
+        <div class="flex items-center">
+          <div class="w-14 h-14 bg-gradient-to-br from-amber-200 to-amber-300 rounded-full flex items-center justify-center mr-4 shadow">
+            <span class="font-bold text-amber-800 text-xl">JM</span>
+          </div>
+          <div>
+            <p class="font-bold text-lg">James M.</p>
+            <p class="text-gray-600 text-sm">Local Business Owner • Regular since 2019</p>
+            <div class="flex items-center mt-1">
+              <i class="fas fa-map-marker-alt text-amber-600 text-xs mr-1"></i>
+              <span class="text-xs text-gray-500">Fort Portal</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Testimonial 2 -->
+      <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 relative">
+        <!-- Quote Icon -->
+        <div class="absolute -top-4 -left-4 w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center">
+          <i class="fas fa-quote-left text-white text-xl"></i>
+        </div>
+        
+        <!-- Rating -->
+        <div class="flex mb-4">
+          <span class="text-amber-400 text-xl">★★★★★</span>
+          <span class="ml-3 font-bold text-amber-700">5.0</span>
+        </div>
+        
+        <!-- Review Text -->
+        <p class="italic text-gray-700 mb-6 text-lg leading-relaxed">
+          "As a food blogger, I've tried pork spots across Uganda. Vian's crispy pork belly is a masterpiece! The bar atmosphere in the evening is the perfect bonus."
+        </p>
+        
+        <!-- Reviewer -->
+        <div class="flex items-center">
+          <div class="w-14 h-14 bg-gradient-to-br from-amber-200 to-amber-300 rounded-full flex items-center justify-center mr-4 shadow">
+            <span class="font-bold text-amber-800 text-xl">SK</span>
+          </div>
+          <div>
+            <p class="font-bold text-lg">Sarah K.</p>
+            <p class="text-gray-600 text-sm">Food Blogger @TasteOfUganda</p>
+            <div class="flex items-center mt-1">
+              <i class="fas fa-star text-amber-600 text-xs mr-1"></i>
+              <span class="text-xs text-gray-500">Visited 8+ times</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Testimonial 3 -->
+      <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 relative">
+        <!-- Quote Icon -->
+        <div class="absolute -top-4 -left-4 w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center">
+          <i class="fas fa-quote-left text-white text-xl"></i>
+        </div>
+        
+        <!-- Rating -->
+        <div class="flex mb-4">
+          <span class="text-amber-400 text-xl">★★★★★</span>
+          <span class="ml-3 font-bold text-amber-700">5.0</span>
+        </div>
+        
+        <!-- Review Text -->
+        <p class="italic text-gray-700 mb-6 text-lg leading-relaxed">
+          "Ordered via WhatsApp for a family gathering - food arrived hot and fresh! The mixed platter fed 6 people perfectly. Now our go-to spot for celebrations."
+        </p>
+        
+        <!-- Reviewer -->
+        <div class="flex items-center">
+          <div class="w-14 h-14 bg-gradient-to-br from-amber-200 to-amber-300 rounded-full flex items-center justify-center mr-4 shadow">
+            <span class="font-bold text-amber-800 text-xl">NP</span>
+          </div>
+          <div>
+            <p class="font-bold text-lg">Naomi P.</p>
+            <p class="text-gray-600 text-sm">Family Celebrations • First-time in 2024</p>
+            <div class="flex items-center mt-1">
+              <i class="fas fa-users text-amber-600 text-xs mr-1"></i>
+              <span class="text-xs text-gray-500">Orders for 6+ people</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Additional Testimonials Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+      <!--Testimonial 1 -->
+      <div class="bg-amber-50 p-6 rounded-xl border border-amber-200">
+        <div class="flex mb-3">
+          <span class="text-amber-400">★★★★★</span>
+        </div>
+        <p class="text-gray-700 mb-4 text-sm italic">
+          "Best pork in Fort Portal! The 12-hour smoked ribs are worth every minute of waiting."
+        </p>
+        <div class="flex items-center">
+          <div class="w-10 h-10 bg-amber-200 rounded-full flex items-center justify-center mr-3">
+            <span class="font-bold text-amber-800 text-sm">DM</span>
+          </div>
+          <div>
+            <p class="font-semibold text-sm">David M.</p>
+            <p class="text-gray-500 text-xs">Local Guide</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Testimonial 2 -->
+      <div class="bg-amber-50 p-6 rounded-xl border border-amber-200">
+        <div class="flex mb-3">
+          <span class="text-amber-400">★★★★★</span>
+        </div>
+        <p class="text-gray-700 mb-4 text-sm italic">
+          "Perfect spot after hiking Rwenzori mountains. Cold beer + smoky pork = heaven!"
+        </p>
+        <div class="flex items-center">
+          <div class="w-10 h-10 bg-amber-200 rounded-full flex items-center justify-center mr-3">
+            <span class="font-bold text-amber-800 text-sm">TE</span>
+          </div>
+          <div>
+            <p class="font-semibold text-sm">Thomas E.</p>
+            <p class="text-gray-500 text-xs">Tourist from Mbarara</p>
+          </div>
+        </div>
+      </div>
+      
+      <!--Testimonial 3 -->
+      <div class="bg-amber-50 p-6 rounded-xl border border-amber-200">
+        <div class="flex mb-3">
+          <span class="text-amber-400">★★★★★</span>
+        </div>
+        <p class="text-gray-700 mb-4 text-sm italic">
+          "Their WhatsApp ordering is so convenient. Food always arrives hot and perfectly cooked."
+        </p>
+        <div class="flex items-center">
+          <div class="w-10 h-10 bg-amber-200 rounded-full flex items-center justify-center mr-3">
+            <span class="font-bold text-amber-800 text-sm">AR</span>
+          </div>
+          <div>
+            <p class="font-semibold text-sm">Alice R.</p>
+            <p class="text-gray-500 text-xs">Busy Professional</p>
+          </div>
+        </div>
+      </div>
+      
+      <!--Testimonial 4 -->
+      <div class="bg-amber-50 p-6 rounded-xl border border-amber-200">
+        <div class="flex mb-3">
+          <span class="text-amber-400">★★★★★</span>
+        </div>
+        <p class="text-gray-700 mb-4 text-sm italic">
+          "The bar atmosphere in the evening is incredible! Live music + great pork = perfect night out."
+        </p>
+        <div class="flex items-center">
+          <div class="w-10 h-10 bg-amber-200 rounded-full flex items-center justify-center mr-3">
+            <span class="font-bold text-amber-800 text-sm">JB</span>
+          </div>
+          <div>
+            <p class="font-semibold text-sm">Jennifer B.</p>
+            <p class="text-gray-500 text-xs">Weekend Regular</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Review Stats -->
+    <div class="bg-gradient-to-r from-amber-700 to-amber-900 text-white p-8 rounded-2xl shadow-lg">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div>
+          <div class="text-5xl font-bold mb-2">4.9</div>
+          <div class="text-amber-200 mb-1">⭐⭐⭐⭐⭐</div>
+          <p class="text-sm">Average Rating</p>
+        </div>
+        <div>
+          <div class="text-5xl font-bold mb-2">500+</div>
+          <div class="text-amber-200 text-2xl mb-1"><i class="fas fa-users"></i></div>
+          <p class="text-sm">Happy Customers</p>
+        </div>
+        <div>
+          <div class="text-5xl font-bold mb-2">98%</div>
+          <div class="text-amber-200 text-2xl mb-1"><i class="fas fa-redo"></i></div>
+          <p class="text-sm">Return Rate</p>
+        </div>
+        <div>
+          <div class="text-5xl font-bold mb-2">8+</div>
+          <div class="text-amber-200 text-2xl mb-1"><i class="fas fa-award"></i></div>
+          <p class="text-sm">Years in Fort Portal</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- CTA -->
+    <div class="text-center mt-12">
+      <h3 class="text-3xl font-bold mb-6 text-amber-900">
+        Ready to Experience Fort Portal's Best Pork?
+      </h3>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <button onclick="Tawk_API.toggle()" 
+                class="bg-gradient-to-r from-amber-700 to-amber-900 hover:from-amber-800 hover:to-amber-950 text-white px-10 py-4 rounded-full text-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center">
+          <i class="fas fa-comments mr-3"></i>Chat Now & Ask Questions
+        </button>
+        <a href="#gallery" 
+           class="border-2 border-amber-600 text-amber-700 hover:bg-amber-50 px-10 py-4 rounded-full text-xl font-semibold transition-all duration-300 flex items-center justify-center">
+          <i class="fas fa-images mr-3"></i>See More Photos
+        </a>
+      </div>
+      <p class="mt-6 text-gray-600">
+        Join our community of happy customers in Fort Portal Tourism City!
+      </p>
+    </div>
+  </div>
+</section>
+  
+  <!-- Bar Section -->
+<section id="bar" class="py-20 bar-gradient text-white">
+  <div class="container mx-auto px-4">
+    <!-- New Heading & Tagline -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">
+        <span class="text-amber-300">Best Bar in Fort Portal</span> | The Vian Bar Experience
+      </h2>
+      <p class="text-2xl text-amber-200 mb-6">
+        Fort Portal's top evening spot with cold beer, cocktails & live music
+      </p>
+      <div class="w-24 h-1 bg-amber-400 mx-auto"></div>
+    </div>
+    
+    <!-- Bar Highlights -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+      <div>
+        <h3 class="text-3xl font-bold mb-6 leading-tight">
+          After the Grill Comes the Chill<br>
+          <span class="text-amber-300">Fort Portal's Favorite Evening Spot</span>
+        </h3>
+        
+        <!-- NEW DESCRIPTION -->
+        <p class="text-lg leading-relaxed mb-8">
+          As dusk settles over Fort Portal Tourism City, our smoke-filled kitchen gives way to 
+          <span class="font-semibold text-amber-200">Fort Portal's most vibrant bar scene</span>. 
+          This is where the day's grill masters become evening's hospitality experts, serving up 
+          ice-cold drinks that perfectly complement our legendary pork.
+        </p>
+        
+        <!-- Key Features -->
+        <div class="space-y-6">
+          <div class="flex items-start">
+            <div class="bg-amber-600 p-3 rounded-lg mr-4">
+              <i class="fas fa-beer text-xl"></i>
+            </div>
+            <div>
+              <p class="font-semibold text-xl mb-1">Cold Beer & Perfect Pairings</p>
+              <p class="text-amber-200">Nothing complements smoky pork like an ice-cold beer. We've curated the best local and international brews.</p>
+            </div>
+          </div>
+          
+          <div class="flex items-start">
+            <div class="bg-amber-600 p-3 rounded-lg mr-4">
+              <i class="fas fa-cocktail text-xl"></i>
+            </div>
+            <div>
+              <p class="font-semibold text-xl mb-1">Pork-Inspired Cocktails</p>
+              <p class="text-amber-200">Our mixologists create signature drinks designed to enhance every bite of your pork experience.</p>
+            </div>
+          </div>
+          
+          <div class="flex items-start">
+            <div class="bg-amber-600 p-3 rounded-lg mr-4">
+              <i class="fas fa-users text-xl"></i>
+            </div>
+            <div>
+              <p class="font-semibold text-xl mb-1">The Heart of Fort Portal's Nightlife</p>
+              <p class="text-amber-200">Where locals and tourists mingle, sharing stories over great food and even better drinks.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Schedule Highlights -->
+        <div class="mt-10 p-6 bg-white/10 rounded-xl border border-amber-700/30">
+          <h4 class="text-xl font-bold mb-4 text-amber-300">🔥 Tonight at Vian Bar:</h4>
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <p class="font-semibold">HAPPY HOURS</p>
+              <p class="text-amber-200">4PM - 7PM Daily</p>
+              <p class="text-sm text-amber-300/80">10% off selected beers</p>
+            </div>
+            <div>
+              <p class="font-semibold">SOFT MUSIC</p>
+              <p class="text-amber-200">Fri & Sat from 8PM</p>
+              <p class="text-sm text-amber-300/80">LOCAL & INTERNATIONAL ARTISTS</p>
+            </div>
+            <div>
+              <p class="font-semibold">SPORTS ZONE</p>
+              <p class="text-amber-200">All Major Games</p>
+              <p class="text-sm text-amber-300/80">Great atmosphere</p>
+            </div>
+            <div>
+              <p class="font-semibold">LATE NIGHT</p>
+              <p class="text-amber-200">Till 2AM</p>
+              <p class="text-sm text-amber-300/80">Kitchen closes at 11PM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Bar Images Grid -->
+      <div class="grid grid-cols-2 gap-4">
+        <div class="relative rounded-lg overflow-hidden h-48 shadow-lg">
+          <img src="https://i.ibb.co/KMjxL24/778b1f36c82e17898769dfb00eb0d881.jpg" 
+               alt="Bar in Fort Portal | Vian Bar drinks and cocktails with pork pairings" 
+               class="w-full h-full object-cover hover:scale-110 transition duration-500">
+          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-3">
+            <p class="text-white font-semibold">SPORTS BOOSTER</p>
+          </div>
+        </div>
+        
+        <div class="relative rounded-lg overflow-hidden h-48 shadow-lg">
+          <img src="https://i.ibb.co/jk8qNzVd/adb0964c17923b3a9eabe3ff7adb7f3f.jpg" 
+               alt="Bar Atmosphere at Night Fort Portal | Evening drinks Uganda" 
+               class="w-full h-full object-cover hover:scale-110 transition duration-500">
+          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-3">
+            <p class="text-white font-semibold">PREMIUM BEER</p>
+          </div>
+        </div>
+        
+        <div class="relative rounded-lg overflow-hidden h-48 shadow-lg">
+          <img src="https://i.ibb.co/FqqDVcsw/e03b84964aaee4efcee4cf906d301b46.jpg" 
+               alt="Whiskey & Spirit Selection Fort Portal | Premium spirits Uganda" 
+               class="w-full h-full object-cover hover:scale-110 transition duration-500">
+          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-3">
+            <p class="text-white font-semibold">PREMIUM SPIRITS</p>
+          </div>
+        </div>
+        
+        <div class="relative rounded-lg overflow-hidden h-48 shadow-lg">
+          <img src="https://i.ibb.co/mCGQy9qx/54168a753f07570f4f7252b340d9d121.jpg" 
+               alt="Beer Selection Fort Portal | Local beers Uganda" 
+               class="w-full h-full object-cover hover:scale-110 transition duration-500">
+          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-3">
+            <p class="text-white font-semibold">UGANDA'S BEST</p>
+          </div>
+        </div>
+        
+        <div class="relative rounded-lg overflow-hidden h-48 shadow-lg col-span-2">
+          <img src="https://i.ibb.co/KjDjyLkf/f20a32ad950352f2618ddeea7dab7a98.jpg" 
+               alt="Bar Crowd & Atmosphere Fort Portal | Nightlife Uganda" 
+               class="w-full h-full object-cover hover:scale-110 transition duration-500">
+          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-3">
+            <p class="text-white font-semibold">EVENING VIBES</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Drink Categories -->
+    <div class="mb-12">
+      <h3 class="text-3xl font-bold mb-8 text-center">
+        <span class="text-amber-300">Drink</span> Like a Local
+      </h3>
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-6">
+        <!-- Craft Cocktails -->
+        <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl text-center hover:bg-white/20 transition duration-300 group">
+          <div class="bg-amber-900/50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition duration-300">
+            <i class="fas fa-cocktail text-3xl text-amber-300"></i>
+          </div>
+          <h4 class="font-bold text-xl mb-2">Signature Cocktails</h4>
+          <p class="text-amber-200 text-sm">Pork-pairing specials crafted by our mixologists</p>
+          <div class="mt-3">
+            <span class="text-xs bg-amber-900/50 px-2 py-1 rounded">Try: Smoky Old Fashioned</span>
+          </div>
+        </div>
+        
+        <!-- Local Beer -->
+        <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl text-center hover:bg-white/20 transition duration-300 group">
+          <div class="bg-amber-900/50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition duration-300">
+            <i class="fas fa-beer text-3xl text-amber-300"></i>
+          </div>
+          <h4 class="font-bold text-xl mb-2">Local & Imported Beer</h4>
+          <p class="text-amber-200 text-sm">Ice-cold beers from Uganda and beyond</p>
+          <div class="mt-3">
+            <span class="text-xs bg-amber-900/50 px-2 py-1 rounded">Local Favorite: Nile Special</span>
+          </div>
+        </div>
+        
+        <!-- Wine Selection -->
+        <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl text-center hover:bg-white/20 transition duration-300 group">
+          <div class="bg-amber-900/50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition duration-300">
+            <i class="fas fa-wine-glass-alt text-3xl text-amber-300"></i>
+          </div>
+          <h4 class="font-bold text-xl mb-2">Curated Wines</h4>
+          <p class="text-amber-200 text-sm">Red & white selections that complement our pork</p>
+          <div class="mt-3">
+            <span class="text-xs bg-amber-900/50 px-2 py-1 rounded">Perfect Pair: Cabernet Sauvignon</span>
+          </div>
+        </div>
+        
+        <!-- Premium Spirits -->
+        <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl text-center hover:bg-white/20 transition duration-300 group">
+          <div class="bg-amber-900/50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition duration-300">
+            <i class="fas fa-whiskey-glass text-3xl text-amber-300"></i>
+          </div>
+          <h4 class="font-bold text-xl mb-2">Premium Spirits</h4>
+          <p class="text-amber-200 text-sm">Whiskey, gin, vodka & more from around the world</p>
+          <div class="mt-3">
+            <span class="text-xs bg-amber-900/50 px-2 py-1 rounded">Featured: Single Malt Scotch</span>
+          </div>
+        </div>
+        
+        <!-- Non-Alcoholic -->
+        <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl text-center hover:bg-white/20 transition duration-300 group">
+          <div class="bg-amber-900/50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition duration-300">
+            <i class="fas fa-glass-whiskey text-3xl text-amber-300"></i>
+          </div>
+          <h4 class="font-bold text-xl mb-2">Refreshing Mocktails</h4>
+          <p class="text-amber-200 text-sm">Creative non-alcoholic options for everyone</p>
+          <div class="mt-3">
+            <span class="text-xs bg-amber-900/50 px-2 py-1 rounded">Try: Passionfruit Sparkler</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Evening Schedule Banner -->
+    <div class="bg-gradient-to-r from-amber-800/30 via-amber-900/40 to-amber-800/30 p-8 rounded-2xl border border-amber-700/30">
+      <div class="flex flex-col md:flex-row items-center justify-between">
+        <div class="mb-6 md:mb-0">
+          <h4 class="text-2xl font-bold mb-2">🎵 Tonight's Music Playlist</h4>
+          <p class="text-amber-200">Featuring <span class="font-semibold text-white">Fort Portal's best local artists songs</span> from 8PM</p>
+          <p class="text-sm text-amber-300/80 mt-2">No cover charge • Great atmosphere • Delicious pork snacks available</p>
+        </div>
+        <div class="flex gap-4">
+          <button onclick="Tawk_API.toggle()" 
+                  class="bg-white text-amber-900 hover:bg-amber-100 px-6 py-3 rounded-full font-bold transition flex items-center">
+            <i class="fas fa-calendar-check mr-2"></i>Check Schedule
+          </button>
+          <a href="#contact" 
+             class="border-2 border-white text-white hover:bg-white/10 px-6 py-3 rounded-full font-bold transition flex items-center">
+            <i class="fas fa-directions mr-2"></i>Find Us
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Bar Testimonial -->
+    <div class="mt-12 text-center max-w-3xl mx-auto">
+      <div class="bg-white/5 p-8 rounded-2xl border border-amber-700/20">
+        <i class="fas fa-quote-right text-amber-400 text-4xl mb-4"></i>
+        <p class="text-xl italic mb-6">
+          "The best evenings in Fort Portal start at Vian Bar. Amazing pork during the day, 
+          incredible drinks and atmosphere at night. It's where everyone ends up!"
+        </p>
+        <div class="flex items-center justify-center">
+          <div class="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center mr-4">
+            <span class="font-bold text-white">BP</span>
+          </div>
+          <div class="text-left">
+            <p class="font-bold">Brian P.</p>
+            <p class="text-amber-300 text-sm">Fort Portal Resident • Bar Regular</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl md:text-5xl font-bold mb-12 text-center text-amber-900">Visit Vian Pork Grill & Bar</h2>
+      
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <!-- Location -->
+        <div class="bg-amber-50 p-8 rounded-2xl text-center">
+          <div class="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+            <i class="fas fa-map-marker-alt text-2xl text-amber-600"></i>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Location</h3>
+          <p class="text-lg mb-2">UGANDA, FORT PORTAL TOURISM CITY</p>
+          <p class="text-gray-600 mb-4">(opposite OIL ENERGY)</p>
+          <a href="https://maps.google.com/?q=Uganda, Fortportal, Rwengoma+ opposite OIL ENERGY PETRO STATION" 
+             target="_blank"
+             class="inline-block text-amber-700 hover:text-amber-900 font-semibold">
+            <i class="fas fa-directions mr-2"></i>Get Directions
+          </a>
+          
+          <!-- Google Reviews CTA -->
+          <div class="mt-6 pt-6 border-t border-amber-200">
+            <a href="https://g.page/vian-pork-grill-fort-portal/review" 
+               target="_blank"
+               class="inline-flex items-center bg-gray-800 hover:bg-gray-900 text-white px-4 py-2 rounded-lg text-sm font-semibold transition">
+              <i class="fab fa-google mr-2"></i>
+              Write a Google Review
+            </a>
+          </div>
+        </div>
+        
+        <!-- Hours -->
+        <div class="bg-amber-50 p-8 rounded-2xl text-center">
+          <div class="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+            <i class="fas fa-clock text-2xl text-amber-600"></i>
+          </div>
+          <h3 class="text-2xl font-bold mb-6">Hours</h3>
+          <div class="space-y-3">
+            <div class="flex justify-between">
+              <span class="font-semibold">Kitchen:</span>
+              <span>11:00 AM - 11:00 PM</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="font-semibold">Bar:</span>
+              <span>4:00 PM - 2:00 AM</span>
+            </div>
+            <div class="flex justify-between text-amber-700">
+              <span class="font-semibold">Happy Hour:</span>
+              <span>4:00 PM - 7:00 PM</span>
+            </div>
+            <div class="mt-4 pt-4 border-t border-amber-200">
+              <p class="text-sm text-gray-600">Open 7 days a week</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Contact -->
+        <div class="bg-amber-50 p-8 rounded-2xl text-center">
+          <div class="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+            <i class="fas fa-phone-alt text-2xl text-amber-600"></i>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Contact</h3>
+          <p class="text-2xl font-bold mb-2">786 060248</p>
+          <p class="text-gray-600 mb-6">Call for reservations or inquiries</p>
+          
+          <div class="space-y-3">
+            <a href="tel:786060248" 
+               class="block bg-amber-600 hover:bg-amber-700 text-white py-3 rounded-lg font-semibold transition">
+              <i class="fas fa-phone mr-2"></i>Call Now
+            </a>
+            <a href="https://wa.me/256786060248" target="_blank"
+               class="block bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg font-semibold transition">
+              <i class="fab fa-whatsapp mr-2"></i>WhatsApp Order
+            </a>
+            <button onclick="Tawk_API.toggle()" 
+                    class="w-full bg-amber-800 hover:bg-amber-900 text-white py-3 rounded-lg font-semibold transition">
+              <i class="fas fa-comments mr-2"></i>Live Chat
+            </button>
+          </div>
+          
+          <!-- Local Business Directories -->
+          <div class="mt-6 pt-6 border-t border-amber-200">
+            <p class="text-sm text-gray-600 mb-2">Find us on:</p>
+            <div class="flex justify-center space-x-2">
+              <a href="https://maps.google.com/?q=Vian+Pork+Grill+Fort+Portal" 
+                 class="text-xs bg-gray-800 hover:bg-gray-900 text-white px-2 py-1 rounded">
+                Google Maps
+              </a>
+              <a href="https://www.tripadvisor.com/AddRestaurant" 
+                 class="text-xs bg-green-600 hover:bg-green-700 text-white px-2 py-1 rounded">
+                TripAdvisor
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download Menu Modal -->
+  <div class="download-modal fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 p-4" id="downloadModal">
+    <div class="bg-white rounded-2xl max-w-md w-full p-8 relative">
+      <button class="absolute top-4 right-4 text-gray-500 hover:text-gray-700 text-2xl" id="closeModal">
+        <i class="fas fa-times"></i>
+      </button>
+      
+      <div class="text-center">
+        <div class="bg-amber-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+          <i class="fas fa-download text-3xl text-amber-600"></i>
+        </div>
+        
+        <h3 class="text-2xl font-bold mb-4 text-amber-900">Download Full Menu</h3>
+        
+        <div class="mb-6">
+          <p class="text-gray-600 mb-4">Download our complete menu with prices, descriptions, and special offers.</p>
+          
+          <div class="bg-amber-50 p-4 rounded-lg mb-4">
+            <div class="flex justify-between text-sm mb-2">
+              <span class="font-medium">File Details:</span>
+              <span class="text-amber-700">3.5 MB • PDF</span>
+            </div>
+            <div class="flex justify-between text-sm">
+              <span class="font-medium">Last Updated:</span>
+              <span class="text-amber-700">December 2025</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Download Progress (hidden by default) -->
+        <div id="downloadProgress" class="hidden">
+          <div class="mb-4">
+            <div class="flex justify-between text-sm mb-1">
+              <span>Downloading...</span>
+              <span id="downloadPercent">0%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2">
+              <div id="progressBar" class="progress-bar bg-amber-600 h-2 rounded-full"></div>
+            </div>
+          </div>
+          <p class="text-sm text-gray-500 mb-4">Your menu will open automatically when ready</p>
+        </div>
+        
+        <!-- Download Options -->
+        <div id="downloadOptions" class="space-y-3">
+          <button id="downloadNow" class="w-full bg-amber-600 hover:bg-amber-700 text-white py-4 rounded-lg font-bold text-lg transition flex items-center justify-center">
+            <i class="fas fa-download mr-3"></i>Download Now
+          </button>
+          
+          <button id="emailMenu" class="w-full border-2 border-amber-600 text-amber-700 hover:bg-amber-50 py-4 rounded-lg font-bold text-lg transition flex items-center justify-center">
+            <i class="fas fa-envelope mr-3"></i>Email Me the Menu
+          </button>
+          
+          <button onclick="Tawk_API.toggle()" class="w-full bg-gray-800 hover:bg-gray-900 text-white py-4 rounded-lg font-bold text-lg transition flex items-center justify-center">
+            <i class="fas fa-comments mr-3"></i>Request Printed Menu
+          </button>
+        </div>
+        
+        <!-- Email Form (hidden by default) -->
+        <div id="emailForm" class="hidden mt-6">
+          <p class="text-gray-600 mb-4">Enter your email to receive our menu:</p>
+          <input type="email" id="emailInput" placeholder="your@email.com" class="w-full p-3 border border-gray-300 rounded-lg mb-3">
+          <button id="submitEmail" class="w-full bg-amber-600 hover:bg-amber-700 text-white py-3 rounded-lg font-bold">
+            Send Menu
+          </button>
+          <p class="text-xs text-gray-500 mt-3">We'll email you the menu and occasional updates</p>
+        </div>
+        
+        <p class="text-sm text-gray-500 mt-6">
+          <i class="fas fa-lock mr-1"></i>Your information is secure
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-amber-950 text-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <img src="https://i.ibb.co/WpngxP57/image-20.png" alt="Vian Pork Grill Logo - Best Pork Restaurant in Fort Portal Uganda" class="h-20 w-20 mb-6">
+          <h3 class="text-2xl font-bold mb-4">Vian Pork Grill</h3>
+          <p>Serving the best grilled pork in Fort Portal since 2017.</p>
+        </div>
+        
+        <div>
+          <h4 class="text-xl font-bold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="#about" class="hover:text-amber-300 transition">About Us</a></li>
+            <li><a href="#menu" class="hover:text-amber-300 transition">Full Menu</a></li>
+            <li><a href="#gallery" class="hover:text-amber-300 transition">Gallery</a></li>
+            <li><a href="#contact" class="hover:text-amber-300 transition">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="text-xl font-bold mb-4">Hours</h4>
+          <p class="mb-2">Monday - Sunday</p>
+          <p class="text-amber-300 font-semibold">11:00 AM – 11:00 PM</p>
+          <p class="mt-4 text-sm text-amber-200">Last orders at 10:30 PM</p>
+        </div>
+      </div>
+      
+      <div class="border-t border-amber-800 pt-8 text-center">
+        <p>© 2026 Vian Pork Grill. All rights reserved. | Built with 🔥 by MASK Intelligence</p>
+        <p class="mt-2 text-amber-300 text-sm">Fort Portal, Uganda • 786 060248</p>
+        
+        <!-- Sitemap & SEO Links -->
+        <div class="mt-6">
+          <a href="/sitemap.xml" class="text-sm text-amber-300 hover:text-amber-200 mr-4">Sitemap</a>
+          <a href="/privacy-policy.html" class="text-sm text-amber-300 hover:text-amber-200 mr-4">Privacy Policy</a>
+          <a href="/terms.html" class="text-sm text-amber-300 hover:text-amber-200">Terms of Service</a>
+        </div>
+        
+        <!-- SEO Location Mention -->
+        <p class="mt-4 text-xs text-amber-400">
+          Vian Pork Grill & Bar - Fort Portal's #1 pork restaurant serving smoked pork, fresh meat, catering services and bar drinks in Fort Portal Tourism City, Uganda.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Tawk.to Live Chat -->
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/695275415823b7197c154d79/1jdl1k2pj';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+    })();
+  </script>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    // Mobile sidebar functionality
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const closeSidebarBtn = document.getElementById('close-sidebar');
+    const sidebarOverlay = document.getElementById('sidebar-overlay');
+    const sidebar = document.querySelector('.mobile-sidebar');
+    
+    function openSidebar() {
+      sidebar.classList.add('open');
+      sidebarOverlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    
+    function closeSidebar() {
+      sidebar.classList.remove('open');
+      sidebarOverlay.classList.remove('active');
+      document.body.style.overflow = 'auto';
+    }
+    
+    mobileMenuBtn.addEventListener('click', openSidebar);
+    closeSidebarBtn.addEventListener('click', closeSidebar);
+    sidebarOverlay.addEventListener('click', closeSidebar);
+    
+    // Close sidebar when clicking any link
+    document.querySelectorAll('.mobile-sidebar a').forEach(link => {
+      link.addEventListener('click', closeSidebar);
+    });
+    
+    // Smooth scrolling for anchor links with Home fix
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href');
+        
+        // If it's Home link or empty hash, scroll to top
+        if (targetId === '#' || this.classList.contains('home-link')) {
+          e.preventDefault();
+          scrollToTop();
+          closeSidebar();
+          return;
+        }
+        
+        // For other anchor links
+        if (targetId !== '#') {
+          e.preventDefault();
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 80,
+              behavior: 'smooth'
+            });
+            closeSidebar();
+          }
+        }
+      });
+    });
+    
+    // Scroll to top function
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+    
+    // Download Menu Functionality
+    const downloadBtn = document.getElementById('download-menu-btn');
+    const downloadModal = document.getElementById('downloadModal');
+    const closeModalBtn = document.getElementById('closeModal');
+    const downloadNowBtn = document.getElementById('downloadNow');
+    const emailMenuBtn = document.getElementById('emailMenu');
+    const emailForm = document.getElementById('emailForm');
+    const downloadOptions = document.getElementById('downloadOptions');
+    const downloadProgress = document.getElementById('downloadProgress');
+    const progressBar = document.getElementById('progressBar');
+    const downloadPercent = document.getElementById('downloadPercent');
+    const emailInput = document.getElementById('emailInput');
+    const submitEmailBtn = document.getElementById('submitEmail');
+    
+    // Open download modal
+    downloadBtn.addEventListener('click', () => {
+      downloadModal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+    
+    // Close download modal
+    closeModalBtn.addEventListener('click', () => {
+      downloadModal.classList.remove('active');
+      document.body.style.overflow = 'auto';
+      resetDownloadForm();
+    });
+    
+    // Close modal when clicking outside
+    downloadModal.addEventListener('click', (e) => {
+      if (e.target === downloadModal) {
+        downloadModal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+        resetDownloadForm();
+      }
+    });
+    
+    // Download Now button
+    downloadNowBtn.addEventListener('click', () => {
+      // Show progress bar
+      downloadOptions.classList.add('hidden');
+      downloadProgress.classList.remove('hidden');
+      
+      // Simulate download progress
+      let progress = 0;
+      const interval = setInterval(() => {
+        progress += 10;
+        progressBar.style.width = `${progress}%`;
+        downloadPercent.textContent = `${progress}%`;
+        
+        if (progress >= 100) {
+          clearInterval(interval);
+          
+          // After completion, open the PDF
+          setTimeout(() => {
+            // Replace this URL with your actual menu PDF URL
+            window.open('https://example.com/vian-pork-grill-menu.pdf', '_blank');
+            
+            // Show success message
+            downloadProgress.innerHTML = `
+              <div class="text-center">
+                <div class="text-green-500 text-4xl mb-4">
+                  <i class="fas fa-check-circle"></i>
+                </div>
+                <h4 class="text-xl font-bold mb-2">Download Complete!</h4>
+                <p class="text-gray-600 mb-4">Your menu has been downloaded successfully.</p>
+                <button onclick="closeModalAndReset()" class="bg-amber-600 hover:bg-amber-700 text-white px-6 py-2 rounded-lg">
+                  Close
+                </button>
+              </div>
+            `;
+          }, 500);
+        }
+      }, 200);
+    });
+    
+    // Email Menu button
+    emailMenuBtn.addEventListener('click', () => {
+      downloadOptions.classList.add('hidden');
+      emailForm.classList.remove('hidden');
+    });
+    
+    // Submit email form
+    submitEmailBtn.addEventListener('click', () => {
+      const email = emailInput.value;
+      
+      // Basic email validation
+      if (!email || !email.includes('@')) {
+        alert('Please enter a valid email address');
+        return;
+      }
+      
+      // Show sending state
+      submitEmailBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Sending...';
+      submitEmailBtn.disabled = true;
+      
+      // Simulate sending
+      setTimeout(() => {
+        emailForm.innerHTML = `
+          <div class="text-center">
+            <div class="text-green-500 text-4xl mb-4">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <h4 class="text-xl font-bold mb-2">Menu Sent!</h4>
+            <p class="text-gray-600 mb-4">We've sent the menu to <strong>${email}</strong></p>
+            <p class="text-sm text-gray-500 mb-4">Check your inbox (and spam folder)</p>
+            <button onclick="closeModalAndReset()" class="bg-amber-600 hover:bg-amber-700 text-white px-6 py-2 rounded-lg">
+              Close
+            </button>
+          </div>
+        `;
+      }, 1500);
+    });
+    
+    // Reset download form function
+    function resetDownloadForm() {
+      downloadOptions.classList.remove('hidden');
+      downloadProgress.classList.add('hidden');
+      emailForm.classList.add('hidden');
+      progressBar.style.width = '0%';
+      downloadPercent.textContent = '0%';
+      emailInput.value = '';
+      submitEmailBtn.innerHTML = 'Send Menu';
+      submitEmailBtn.disabled = false;
+    }
+    
+    // Global function to close modal
+    window.closeModalAndReset = function() {
+      downloadModal.classList.remove('active');
+      document.body.style.overflow = 'auto';
+      resetDownloadForm();
+    };
+    
+    // Tawk.to customization
+    Tawk_API = Tawk_API || {};
+    Tawk_API.onLoad = function(){
+      // Customize chat widget appearance
+      Tawk_API.setAttributes({
+        'theme' : 'classic',
+        'color' : '#d97706', // amber-500
+        'highlight' : '#92400e' // amber-800
+      }, function(error){});
+    };
+    
+    // Add to Cart functionality (basic)
+    document.querySelectorAll('button:contains("Add to Order")').forEach(button => {
+      button.addEventListener('click', function() {
+        const dishName = this.closest('.menu-card').querySelector('h3').textContent;
+        
+        // Show notification
+        const notification = document.createElement('div');
+        notification.className = 'fixed top-4 right-4 bg-green-600 text-white px-6 py-3 rounded-lg shadow-lg z-50 animate-pulse';
+        notification.innerHTML = `<i class="fas fa-check-circle mr-2"></i> Added ${dishName} to order`;
+        document.body.appendChild(notification);
+        
+        // Remove notification after 3 seconds
+        setTimeout(() => {
+          notification.remove();
+        }, 3000);
+      });
+    });
+    
+    // Lazy loading for images
+    document.addEventListener("DOMContentLoaded", function() {
+      const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+      
+      const imageObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const img = entry.target;
+            img.classList.add('loaded');
+            observer.unobserve(img);
+          }
+        });
+      });
+      
+      lazyImages.forEach(img => imageObserver.observe(img));
+    });
+  </script>
+</body>
+</html>
